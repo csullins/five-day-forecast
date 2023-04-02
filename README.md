@@ -1,21 +1,15 @@
-# User Story
+# Weather App
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 
-## Acceptance Criteria
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+## Use
+The Five-Day Forecast app presents the user with a list of cities to choose from in order to look up the weather there. When the user selects a city, the current and future conditions for that city are displayed, including the date, temperature, humidity, wind speed for that city. These items are also stored to persist refreshes.
 
 ## Mock-Up
 The following image shows the web application's appearance and functionality:
 
-A screenshot displays a weather dashboard that includes a search function and a five-day forecast.
+![The weather app includes a list of cities, and a five-day forecast and current weather conditions for the selected city.](./assets/demo.png)
+
+
 
