@@ -23,7 +23,7 @@ cityButtons.forEach((button) => {
     // button.classList.add('is-active');
    const city = event.target.textContent;
     // Enter the clicked city into the API call
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
       let lat = data[0].lat;
