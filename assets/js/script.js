@@ -48,6 +48,11 @@ getWeather = (lat, lon) => {
       ul.appendChild(humidityLi);
       
       mainTitle.appendChild(ul);
+      // Save the selected values to localStorage
+localStorage.setItem('temp', tempLi.textContent);
+localStorage.setItem('wind', windLi.textContent);
+localStorage.setItem('humidity', humidityLi.textContent);
+    
 
     //set the content for 5-day tiles  
     tiles.forEach((tile, index) => {
