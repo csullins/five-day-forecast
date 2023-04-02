@@ -1,12 +1,13 @@
+const container = document.querySelector(".container");
 const apiKey = 'c5b0c54ba2eca16a585415f81e9d17e2'; 
 const cityButtons = document.querySelectorAll('.city-button');
 const tiles = document.querySelectorAll('.is-vertical');
 const card = document.querySelector('.card');
 
+
 Storage.prototype.setObj = function(key, obj) {
   return this.setItem(key, JSON.stringify(obj))
 }
-
 Storage.prototype.getObj = function(key) {
   return JSON.parse(this.getItem(key))
 }
@@ -63,7 +64,6 @@ function populatePage(data) {
         const formattedDate = date.toLocaleDateString('en-US');
 
         tile.querySelector('.subtitle').textContent = formattedDate;
-        card.querySelector('.title').textContent = data.city.name;
+        card.querySelector('.title').textContent = data.city.name;        
   })
 };
-
